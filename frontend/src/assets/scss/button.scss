@@ -1,0 +1,13 @@
+.btn-base {
+    @apply rounded-lg p-2 shadow-lg cursor-pointer text-center;
+}
+
+.btn-flat {
+    @extend .btn-base;
+    @apply outline outline-1 outline-gray-400 shadow-none;
+}
+
+.btn-primary {
+    @extend .btn-base;
+    @apply bg-blue-500 hover:bg-blue-600  text-white;
+}

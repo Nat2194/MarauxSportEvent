@@ -1,0 +1,69 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.header-div {
+    @apply px-2;
+    @apply gap-2;
+}
+.title-size {
+    @apply text-base;
+}
+.button-header-size {
+    @apply text-xs
+}
+
+/* Diminuer les tailles graduellement pour les petits écrans */
+@screen sm {
+    .header-div {
+      @apply px-4;
+      @apply gap-4;
+    }
+    .title-size {
+      @apply text-lg;
+    }
+    .button-header-size {
+      @apply text-sm
+    }
+  }
+
+@screen md {
+  .header-div {
+    @apply px-6;
+    @apply gap-6;
+  }
+  .title-size {
+    @apply text-xl;
+}
+.button-header-size {
+    @apply text-base
+  }
+}
+
+@screen lg {
+    .header-div {
+      @apply px-8;
+      @apply gap-8;
+    }
+    .title-size {
+      @apply text-2xl;
+  }
+  .button-header-size {
+    @apply text-lg
+  }
+  }
+
+@screen xl {
+    .header-div {
+      @apply px-10;
+      @apply gap-10;
+    }
+    .title-size {
+      @apply text-3xl;
+  }
+  .button-header-size {
+    @apply text-xl
+  }
+  }
