@@ -2,20 +2,22 @@
     <div>
         <LayoutBase>
             <div class="flex flex-col gap-4">
-                <h1>STAGES DE FOOTBALL</h1>
+                <h1 class="font-yanone-kaffeesatz font-bold">STAGES DE FOOTBALL</h1>
+                <SliderBase :img-list="sliderImages" />
             </div>
         </LayoutBase>
     </div>
   </template>
   
-  <script>
+  <script setup>
   import LayoutBase from '../components/LayoutBase.vue';
-  
-  export default {
-    components: {
-      LayoutBase,
-    },
-  };
+  import SliderBase from '../components/SliderBase.vue';
+  import sliderImg1 from '../assets/img/slider/1.webp';
+  import sliderImg2 from '../assets/img/slider/2.webp';
+  import sliderImg3 from '../assets/img/slider/3.webp';
+
+  const sliderImages = [sliderImg1, sliderImg2, sliderImg3];
+
   </script>
   
   <style lang="scss">

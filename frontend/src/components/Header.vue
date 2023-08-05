@@ -3,7 +3,7 @@
         <div class="header-div justify-between flex py-4">
 			<div class="flex gap-2">
 				<router-link to="/" class="flex items-center gap-2 !text-black logo">
-					<span class="z-10 bg-white title-size font-bold underline">marauXsporTevenT</span>
+					<span class="z-10 bg-white title-size font-bold underline font-yanone-kaffeesatz">marauXsporTevenT</span>
 				</router-link>
 			</div>
 			<div class="flex gap-8 items-center">
