@@ -1,21 +1,21 @@
 <template>
-    <div>
-        <LayoutBase>
-            Test
-      <!-- Le contenu principal de la page viendra ici -->
-        </LayoutBase>
-    </div>
-  </template>
+  <div>
+    <LayoutBase>
+      <ContactForm />
+    </LayoutBase>
+  </div>
+</template>
   
-  <script>
-  import LayoutBase from '../components/LayoutBase.vue';
+<script>
+import LayoutBase from '../components/LayoutBase.vue';
+import ContactForm from '../components/ContactForm.vue';
+
+export default {
+  components: {
+    LayoutBase,
+    ContactForm
+  },
+};
+</script>
   
-  export default {
-    components: {
-      LayoutBase,
-    },
-  };
-  </script>
-  
-  <style lang="scss">
-  </style>
+<style lang="scss"></style>

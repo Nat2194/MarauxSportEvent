@@ -2,8 +2,8 @@
     <li>
       <div class="bg-slate-400 text-black relative z-1 overflow-hidden rounded-t-md p-4">
         <time>{{ event.date }}</time>
-        <span class="font-bold text-xl">{{ event.title }}</span>
-        <h1>{{event.image}}</h1>
+        <span class="font-bold text-xl pl-4">{{ event.title }}</span>
+        <span class="font-semibold text-xl pl-4">{{ event.place }}</span>
         <img :src="event.image" alt="event image" class="absolute top-0 right-0 opacity-20 z-0">
       </div>
       <div class="flex">

@@ -12,7 +12,10 @@
     @apply text-base;
 }
 .button-header-size {
-    @apply text-xs
+    @apply text-sm;
+}
+.icon-slash::before {
+  @apply text-3xl;
 }
 
 /* Diminuer les tailles graduellement pour les petits écrans */
@@ -25,7 +28,7 @@
       @apply text-lg;
     }
     .button-header-size {
-      @apply text-sm
+      @apply text-base;
     }
   }
 
@@ -38,7 +41,7 @@
     @apply text-xl;
 }
 .button-header-size {
-    @apply text-base
+    @apply text-lg
   }
 }
 
@@ -51,7 +54,7 @@
       @apply text-2xl;
   }
   .button-header-size {
-    @apply text-lg
+    @apply text-xl
   }
   }
 
@@ -64,6 +67,6 @@
       @apply text-3xl;
   }
   .button-header-size {
-    @apply text-xl
+    @apply text-2xl
   }
   }
