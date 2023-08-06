@@ -1,9 +1,10 @@
 <template>
     <div>
         <LayoutBase>
-            <div class="flex flex-col gap-4">
+            <div class="flex flex-col gap-4 bg-yellow-400">
                 <h1 class="font-yanone-kaffeesatz font-bold">STAGES DE FOOTBALL</h1>
                 <SliderBase :img-list="sliderImages" />
+                <StagesList />
             </div>
         </LayoutBase>
     </div>
@@ -12,6 +13,7 @@
   <script setup>
   import LayoutBase from '../components/LayoutBase.vue';
   import SliderBase from '../components/SliderBase.vue';
+  import StagesList from '../components/StagesList.vue';
   import sliderImg1 from '../assets/img/slider/1.webp';
   import sliderImg2 from '../assets/img/slider/2.webp';
   import sliderImg3 from '../assets/img/slider/3.webp';
