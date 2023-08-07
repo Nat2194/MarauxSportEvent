@@ -1,8 +1,6 @@
-
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-
 
 .header-div {
     @apply px-2;
@@ -15,58 +13,80 @@
     @apply text-sm;
 }
 .icon-slash::before {
-  @apply text-3xl;
+    @apply text-3xl;
+}
+
+.logo-size {
+    // Utilise le z-index pour assurer que la div est positionnée au-dessus des autres éléments
+    z-index: 11;
 }
 
 /* Diminuer les tailles graduellement pour les petits écrans */
 @screen sm {
     .header-div {
-      @apply px-4;
-      @apply gap-4;
+        @apply px-4;
     }
     .title-size {
-      @apply text-lg;
+        @apply text-lg;
     }
     .button-header-size {
-      @apply text-base;
+        @apply text-base;
     }
-  }
+}
 
 @screen md {
-  .header-div {
-    @apply px-6;
-    @apply gap-6;
-  }
-  .title-size {
-    @apply text-xl;
-}
-.button-header-size {
-    @apply text-lg
-  }
+    .header-div {
+        @apply px-6;
+    }
+    .title-size {
+        @apply text-xl;
+    }
+    .button-header-size {
+        @apply text-lg;
+    }
 }
 
 @screen lg {
     .header-div {
-      @apply px-8;
-      @apply gap-8;
+        @apply px-8;
+        @apply gap-8;
     }
     .title-size {
-      @apply text-2xl;
-  }
-  .button-header-size {
-    @apply text-xl
-  }
-  }
+        @apply text-2xl;
+    }
+    .button-header-size {
+        @apply text-xl;
+    }
+    .logo-size {
+        @apply rounded-bl-lg;
+        @apply rounded-br-lg;
+        @apply relative;
+        @apply bg-red-600;
+        @apply shadow-md;
+        // Déplace la div vers le bas en utilisant la propriété translate
+        transform: translate(5rem, 2rem);
+
+        // Augmente la hauteur de la div pour la faire dépasser de la div blanche
+        height: calc(100% + 4rem);
+    }
+}
 
 @screen xl {
     .header-div {
-      @apply px-10;
-      @apply gap-10;
+        @apply px-10;
+        @apply gap-10;
     }
     .title-size {
-      @apply text-3xl;
-  }
-  .button-header-size {
-    @apply text-2xl
-  }
-  }
+        @apply text-3xl;
+    }
+    .button-header-size {
+        @apply text-2xl;
+    }
+    .logo-size {
+        // Déplace la div vers le bas en utilisant la propriété translate
+        transform: translate(10rem, 2rem);
+
+        // Augmente la hauteur de la div pour la faire dépasser de la div blanche
+        height: calc(100% + 4rem);
+    }
+}
